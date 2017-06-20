@@ -17,4 +17,4 @@ class AssistantHandlerHelloWorld(AssistantHandler):
 		pass
 
 	def getSpeech(self, parameters, data):
-		return "Hello World!"
+		return "Hello World test!"
