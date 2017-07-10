@@ -19,7 +19,6 @@ class AssistantHandlerGoogleCalendarAdd(AssistantHandlerGoogleCalendar):
 		return {"text":parameters["text"],"sendNotifications":True}
 
 	def getSpeech(self, parameters, data):
-		return "Hello World man!"
 		formatFromGoogle = '%Y-%m-%dT%H:%M:%SZ'
 		formatForOutput = '%Y-%m-%d %H:%M'
 		start = dt.datetime.strptime(data["start"]["dateTime"], formatFromGoogle).strftime(formatForOutput)
