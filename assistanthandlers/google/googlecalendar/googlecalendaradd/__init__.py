@@ -25,3 +25,4 @@ class AssistantHandlerGoogleCalendarAdd(AssistantHandlerGoogleCalendar):
 		end = dt.datetime.strptime(data["end"]["dateTime"], formatFromGoogle).strftime(formatForOutput)
 		return "Added calendar appointment with the description \"" + data["summary"] + "\" starting on " + start
 	
+return start
